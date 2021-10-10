@@ -67,11 +67,26 @@
 }
 
 :root {
+    --blue: hsl(228, 45%, 44%);
     --pink: hsl(322, 100%, 66%);
     --light-pink: hsl(321, 100%, 78%);
     --light-red: hsl(0, 100%, 63%);
     --dark-cyan: hsl(192, 100%, 9%);
     --pale-blue: hsl(207, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+*,
+*::after,
+*::before {
+    color: inherit;
+    background: inherit;
+    font-family: inherit;
+    box-sizing: border-box
 }
 
 body {
@@ -87,8 +102,41 @@ h3 {
     font-family: 'Poppins'
 }
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+header img{
+    height: 38px;
+    width: 240px
+}
+
+button{
+    box-sizing: border-box;
+}
+
+.outline-button{
+    width: 136px;
+    font-size: 16px;
+    line-height: 38px;
+    color: var(--pink);
+    text-align: center;
+    border-radius: 20px;
+    text-transform: capitalize;
+    border: 1px solid var(--pink);
+    box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778);
+
+}
+
 /* Media query for desktop */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+    header{
+        height: 40px;
+        margin: 78px 63px 0 80px
+    }
+}
 
 /* Default CSS */
 .attribution {
@@ -97,5 +145,5 @@ h3 {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%)
+    color: var(--blue)
 }
