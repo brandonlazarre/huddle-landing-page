@@ -89,11 +89,13 @@
 } */
 
 html {
+    scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%
 }
 
 body {
     font-weight: 400;
+    color: var(--dark-cyan);
     font-family: 'Open Sans'
 }
 
@@ -130,7 +132,7 @@ button {
     border-radius: 40px;
     color: var(--white);
     background: var(--pink);
-    box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+    box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053)
 }
 
 .outline-button {
@@ -153,8 +155,7 @@ button {
 
 #hero h1 {
     font-size: 48px;
-    margin-bottom: 23px;
-    color: var(--dark-cyan)
+    margin-bottom: 23px
 }
 
 #hero p {
@@ -163,11 +164,45 @@ button {
     line-height: 30px;
     text-align: center;
     margin-bottom: 47px;
-    color: var(--dark-cyan)
+
 }
+
 #hero img {
-    margin-top: 110px;
+    margin: 110px 0 120px 0
 }
+
+#diagrams {
+    width: 880px;
+    display: flex;
+    margin: 0 280px;
+    justify-content: space-between
+}
+
+#diagrams img {
+    left: 3px;
+    position: relative
+}
+
+.diagram div {
+    top: -15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative
+}
+
+.figure {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 144px
+}
+
+.diagram p {
+    font-size: 24px;
+    line-height: 36px;
+    color: #808E9A
+}
+
 
 /* Media query for desktop */
 @media only screen and (min-width: 1440px) {
@@ -178,7 +213,7 @@ button {
 
     #hero {
         /* width: ; */
-        margin: 150px 212px 212px
+        margin: 150px 212px 0 212px
     }
 }
 
