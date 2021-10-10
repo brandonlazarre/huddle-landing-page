@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* poppins-700 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../webfonts/poppins-v15-latin-700.woff2) format('woff2')
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../webfonts/open-sans-v26-latin-regular.woff2) format('woff2')
+}
+
+/* open-sans-600 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../webfonts/open-sans-v26-latin-600.woff2) format('woff2')
+}
+
+/* open-sans-700 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../webfonts/open-sans-v26-latin-700.woff2) format('woff2')
+}
+
+/* Font Awesome Brands */
+.fab,
+.fad {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(../webfonts/fa-brands-400.woff2) format('woff2')
+}
+
+.fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400
+}
+
+.fa-facebook-square:before {
+    content: "\f082"
+}
+
+.fa-instagram:before {
+    content: "\f16d"
+}
+
+.fa-twitter-square:before {
+    content: "\f081"
+}
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --pale-blue: hsl(207, 100%, 98%);
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Open Sans'
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    font-family: 'Poppins'
+}
+
+/* Media query for desktop */
+@media only screen and (min-width: 1440px) {}
+
+/* Default CSS */
+.attribution {
+    font-size: 11px;
+    text-align: center
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%)
+}
