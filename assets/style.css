@@ -97,20 +97,20 @@
 
 html {
     scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Open Sans', sans-serif
 }
 
 body {
     font-weight: 400;
-    color: var(--dark-cyan);
-    font-family: 'Open Sans'
+    color: var(--dark-cyan)
 }
 
 h1,
 h2,
 h3 {
     font-weight: 700;
-    font-family: 'Poppins'
+    font-family: 'Poppins', sans-serif
 }
 
 h1 {
@@ -122,6 +122,13 @@ h2 {
     font-size: 40px;
     line-height: 60px;
     margin-bottom: 26px
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    text-transform: uppercase
 }
 
 p {
@@ -145,6 +152,27 @@ button {
     background: inherit;
     font-family: inherit;
     box-sizing: border-box
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 48px;
+    border-radius: 6px
+}
+
+input[type=text] {
+    width: 320px
+}
+
+input[type=submit] {
+    width: 160px;
+    font-size: 16px;
+    color: var(--white);
+    background: var(--pink)
 }
 
 img {
@@ -298,15 +326,85 @@ header {
 }
 
 #cta {
-    margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 35px;
+    margin: 35px 0 210px 0;
 }
 
 #cta h2 {
     margin-bottom: 42px;
+}
+
+.separator-t:last-of-type {
+    bottom: -5px;
+    position: relative;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-cyan);
+}
+
+footer {
+    color: var(--white);
+}
+
+footer .container {
+    width: 100%;
+    padding: 120px;
+    align-items: flex-start;
+    /* padding-bottom: 80px; */
+    box-sizing: border-box
+}
+
+footer .container p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 340px;
+    margin-bottom: 24px;
+}
+
+footer .container svg {
+    margin-bottom: 27px
+}
+
+.contact {
+    display: flex;
+    align-items: center
+}
+
+.contact:last-of-type {
+    margin-bottom: 60px;
+}
+
+.contact img {
+    margin: 8px 16px 8px 0;
+}
+
+#socials-media {
+
+    left: 120px;
+    bottom: 100px;
+    font-size: 28pt;
+    position: absolute;
+}
+
+#socials-media i {
+    margin-right: 12px;
+}
+
+#newsletter {
+    width: 520px;
+}
+
+#newsletter p {
+    max-width: 344px;
+    margin-bottom: 40px;
 }
 
 /* Media query for desktop */
