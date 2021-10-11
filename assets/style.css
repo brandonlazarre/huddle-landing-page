@@ -186,8 +186,8 @@ button {
 
 #diagrams {
     width: 880px;
+    margin: auto;
     display: flex;
-    margin: 0 280px;
     justify-content: space-between
 }
 
