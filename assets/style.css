@@ -95,12 +95,6 @@
     padding: 0
 }
 
-/* *,
-*::after,
-*::before {
-    box-sizing: border-box
-} */
-
 html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%
@@ -157,6 +151,25 @@ img {
     max-width: 100%
 }
 
+.container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container p {
+    max-width: 520px;
+}
+
+.container .illustration {
+    width: 560px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .button {
     font-weight: 700;
     font-size: 20px;
@@ -179,11 +192,16 @@ img {
     border: 1px solid var(--pink);
     box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778)
 }
+header {
+    height: 40px;
+    padding: 78px 63px 80px 80px
+}
 
 #hero {
     display: flex;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    margin: 150px 212px 0 212px
 }
 
 #hero p {
@@ -232,14 +250,15 @@ img {
     color: #808E9A
 }
 
-.separator img {
+.separator-t img {
     width: 100%
 }
 
 .separator-b img {
     top: -5px;
     width: 100%;
-    position: relative
+    position: relative;
+    margin-bottom: 70px;
 }
 
 #growtogether {
@@ -249,27 +268,7 @@ img {
 }
 
 #growtogether .container {
-    margin: auto;
-    display: flex;
     width: 1180px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#growtogether .illustration {
-    width: 560px;
-    height: 560px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container div {
-    /* flex: 1 1 0px */
-}
-
-#growtogether p {
-    max-width: 520px;
 }
 
 #growtogether img {
@@ -277,17 +276,18 @@ img {
     height: 423.11px;
 }
 
+#flowingconversations .container {
+    width: 1200px;
+}
+
+#flowingconversations img {
+    width: 531px;
+    height: 378px;
+}
+
 /* Media query for desktop */
 @media only screen and (min-width: 1440px) {
-    header {
-        height: 40px;
-        padding: 78px 63px 80px 80px
-    }
 
-    #hero {
-        /* width: ; */
-        margin: 150px 212px 0 212px
-    }
 }
 
 /* Default CSS */
