@@ -77,16 +77,16 @@
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 8px
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--white);
+    background-color: var(--white)
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #A7B9C8;
-    border-radius: 2rem;
+    border-radius: 2rem
 }
 
 * {
@@ -126,7 +126,7 @@ h2 {
 
 p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 24px
 }
 
 header {
@@ -155,11 +155,11 @@ img {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .container p {
-    max-width: 520px;
+    max-width: 520px
 }
 
 .container .illustration {
@@ -167,7 +167,7 @@ img {
     height: 560px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .button {
@@ -192,6 +192,22 @@ img {
     border: 1px solid var(--pink);
     box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778)
 }
+
+.separator-t {
+    margin-top: -20px
+}
+
+.separator-t img {
+    width: 100%
+}
+
+.separator-b img {
+    top: -5px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 70px
+}
+
 header {
     height: 40px;
     padding: 78px 63px 80px 80px
@@ -221,11 +237,11 @@ header {
     width: 880px;
     margin: auto;
     display: flex;
-    margin-bottom: 120px;
+    margin-bottom: 140px;
     justify-content: space-between
 }
 
-#diagrams img {
+.diagram img {
     left: 3px;
     position: relative
 }
@@ -244,51 +260,45 @@ header {
     line-height: 144px
 }
 
-.diagram p {
+#diagrams p {
     font-size: 24px;
     line-height: 36px;
     color: #808E9A
 }
 
-.separator-t img {
-    width: 100%
-}
-
-.separator-b img {
-    top: -5px;
-    width: 100%;
-    position: relative;
-    margin-bottom: 70px;
-}
-
-#growtogether {
-    top: -5px;
-    position: relative;
-    background: var(--pale-blue);
-}
-
 #growtogether .container {
-    width: 1180px;
+    width: 1180px
 }
 
 #growtogether img {
     width: 517.22px;
-    height: 423.11px;
-}
-
-#flowingconversations .container {
-    width: 1200px;
+    height: 423.11px
 }
 
 #flowingconversations img {
     width: 531px;
-    height: 378px;
+    height: 378px
+}
+
+#yourusers img {
+    width: 534px;
+    height: 404px
+}
+
+#yourusers .container,
+#flowingconversations .container {
+    width: 1200px
+}
+
+#yourusers,
+#growtogether {
+    top: -5px;
+    position: relative;
+    background: var(--pale-blue)
 }
 
 /* Media query for desktop */
-@media only screen and (min-width: 1440px) {
-
-}
+@media only screen and (min-width: 1440px) {}
 
 /* Default CSS */
 .attribution {
